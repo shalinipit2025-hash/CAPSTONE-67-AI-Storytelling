@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Library of Forgotten Stars</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background: #10132b;
+            color: #f5eaff;
+            text-align: center;
+        }
+
+        header {
+            padding: 35px 15px;
+            background: linear-gradient(#292052, #10132b);
+        }
+
+        h1 {
+            color: #f7d987;
+            font-size: 32px;
+        }
+
+        section {
+            max-width: 650px;
+            margin: 20px auto;
+            padding: 22px;
+            line-height: 1.8;
+        }
+
+        .book {
+            font-size: 65px;
+        }
+
+        button {
+            padding: 12px 18px;
+            margin: 7px;
+            border: 0;
+            border-radius: 8px;
+            background: #f7d987;
+            color: #17142c;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        #story {
+            background: #201d40;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        footer {
+            padding: 20px;
+            color: #c9bedf;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="book">📚 ✨</div>
+    <h1>The Library of Forgotten Stars</h1>
+    <p>An AI-assisted fantasy mystery</p>
+</header>
+
+<section>
+    <h2>Meet Nila</h2>
+    <p>
+        Nila is an eighteen-year-old girl who discovers a secret library
+        beneath an abandoned clock tower. Its magical books contain
+        forgotten memories, and mysterious stars are disappearing
+        from the night sky.
+    </p>
+
+    <h2>Begin the Mystery</h2>
+    <div id="story">
+        <p id="chapter">
+            At midnight, every clock in the town stopped.
+            Nila entered the hidden library and found a silver book
+            with her name on its cover. Should she open it?
+        </p>
+    </div>
+
+    <button onclick="openBook()">Open the Silver Book</button>
+    <button onclick="trustAren()">Trust the Librarian</button>
+    <button onclick="restartStory()">Start Again</button>
+</section>
+
+<footer>
+    <p>Created for CAPSTONE 67 — AI Storytelling and Creative Writing Lab</p>
+    <p>Human creativity guided the story; AI supported brainstorming and editing.</p>
+</footer>
+
+<script>
+    function openBook() {
+        document.getElementById("chapter").textContent =
+            "The silver book revealed the truth: Aren helped the Star Keeper " +
+            "create a spell that removed painful memories. Each lost memory " +
+            "caused another star to disappear. Nila must find a way to restore them.";
+    }
+
+    function trustAren() {
+        document.getElementById("chapter").textContent =
+            "Aren looked at Nila sadly. He admitted his secret and promised " +
+            "to help her. Together, they searched for the Star Keeper, " +
+            "who held the power to return the forgotten memories.";
+    }
+
+    function restartStory() {
+        document.getElementById("chapter").textContent =
+            "At midnight, every clock in the town stopped. " +
+            "Nila entered the hidden library and found a silver book " +
+            "with her name on its cover. Should she open it?";
+    }
+</script>
+
+</body>
+      </html>
